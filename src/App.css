@@ -1,38 +1,282 @@
-.App {
-  text-align: center;
+*{
+  font-family: serif;
+  font-weight: bolder;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* LIGHT MODE */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.LightApp{
+  color: rgba(0, 119, 255, 0.664);
+  width: 40%;
+  margin: 5vh auto 5vh auto;
+  min-height: 90vh;
+  border-radius: 20px 8px 20px 20px;
+  box-shadow: 0px 0px 10px 2px black;
+  transition: all 0.4s ease-in-out;
+  border: 1px solid black;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.LightAppToggle{
+  width: 80%;
+  margin: 0 auto 0 auto;
+  padding: 10px;
+}
+.LightAppToggle > button{
+  color: rgba(0, 119, 255, 0.664);
+  padding: 10px;
+  margin: 4px;
+  border: pink;
+  border-radius: 6px 1px 6px 6px;
+  box-shadow: 1px 2px 2px 1px lightgray;
+}
+.LightAppMain{
+  width: 80%;
+  margin: 10px auto 10px auto;
+  min-height: 20vh;
+}
+.LightAppMain h3{
+  margin: 0;
+}
+.LightMainDisplay{
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.LightMainTotal{
+  font-size: 1.4rem;
+  padding: 10px;
+}
+.LightMainDisplayBox{
+  width: 180px;
+  text-align: center;
+  display: flex;
+  background-color: whitesmoke;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 1.1rem;
+  padding: 4px;
+  margin: 4px;
+  border-radius: 10px 4px 10px 10px;
+  box-shadow: 1px 2px 2px 1px lightgray;
+  border-right: 4px solid pink;
+  border-bottom: 4px solid pink;
+}
+.LightMainDisplayBox > div{
+  padding: 4px;
+}
+.LighttransactionList{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.transactionListName{
+  width: 60px;
+}
+.transactionListAmount{
+  width: 60px;
+}
+.LighttransactionList > li{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 4px;
+  border-radius: 6px 1px 6px 6px;
+  box-shadow: 1px 2px 2px 1px lightgray;
+  transition: all 0.4s ease-in-out;
+}
+.LighttransactionList > li > span > button{
+  border-radius: 6px 1px 6px 6px;
+  border: .4px solid #dada;
+  box-shadow: 0.5px 1px 1px 0.5px lightgray;
+}
+input{
+  border: none;
+  padding: 4px;
+}
+.Lightaddtransaction{
+  width: 100%;
+}
+.Lightaddtransaction > input{
+  width: -webkit-fill-available;
+  padding: 10px;
+  margin: 4px;
+  border: lightgray;
+  border-radius: 6px 1px 6px 6px;
+  box-shadow: 1px 2px 2px 1px lightgray;
+}
+.Lightaddtransaction > button{
+  width: -webkit-fill-available;
+  padding: 10px;
+  margin: 4px;
+  border: lightgray;
+  border-radius: 6px 1px 6px 6px;
+  box-shadow: 1px 2px 2px 1px lightgray;
+}
+.Danger{
+  color: red;
+}
+.Normal{
+  color: rgb(13, 184, 13);
+}
+.Blur{
+  -webkit-filter: blur(3px); 
+-moz-filter: blur(3px); 
+-o-filter: blur(3px); 
+-ms-filter: blur(3px); 
+filter: blur(3px); 
+}
+.LighttransactionListEdit{
+  width: 200px;
+  text-align: center;
+  display: flex;
+  background-color: whitesmoke;
+  flex-direction: column;
+  font-size: 1.1rem;
+  padding: 20px;
+  border-radius: 20px 8px 20px 20px;
+  box-shadow: 1px 2px 40px 20px lightgray;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease-in-out;
+}
+.hidden{
+  display: none;
+}
+/* DARK MODE */
+
+.DarkApp{
   color: white;
+  width: 40%;
+  margin: 5vh auto 5vh auto;
+  min-height: 90vh;
+  border-radius: 20px 8px 20px 20px;
+  box-shadow: 0px 0px 15px 5px darkgrey;
+  background-color: #282c34;
+  transition: all 0.4s ease-in-out;
+  border: 3px solid darkgrey;
 }
-
-.App-link {
-  color: #61dafb;
+.DarkAppToggle{
+  width: 80%;
+  margin: 0 auto 0 auto;
+  padding: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.DarkAppToggle > button{
+  color: darkmagenta;
+  padding: 10px;
+  margin: 4px;
+  border: darkgray;
+  border-radius: 6px 1px 6px 6px;
+  box-shadow: 1px 2px 2px 1px darkmagenta;
+}
+.DarkAppMain{
+  width: 80%;
+  margin: 10px auto 10px auto;
+  min-height: 20vh;
+}
+.DarkAppMain h3{
+  margin: 0;
+}
+.DarkMainDisplay{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.DarkMainTotal{
+  font-size: 1.4rem;
+  padding: 10px;
+}
+.DarkMainDisplayBox{
+  width: 180px;
+  text-align: center;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  color: darkmagenta;
+  font-size: 1.1rem;
+  padding: 4px;
+  margin: 4px;
+  border-radius: 10px 4px 10px 10px;
+  box-shadow: 1px 2px 2px 1px black;
+  border-right: 4px solid darkmagenta;
+  border-bottom: 4px solid darkmagenta;
+}
+.DarkMainDisplayBox > div{
+  padding: 4px;
+}
+.DarktransactionList{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.DarktransactionList > li{
+  color: darkmagenta;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 4px;
+  border-radius: 6px 1px 6px 6px;
+  box-shadow: 1px 2px 2px 1px black;
+  transition: all 0.4s ease-in-out;
+}
+.DarktransactionList > li > span > button{
+  background-color: pink;
+  border: .4px solid palevioletred;
+  border-radius: 6px 1px 6px 6px;
+  box-shadow: 0.5px 1px 1px 0.5px grey;
+}
+.Darkaddtransaction{
+  width: 100%;
+}
+.Darkaddtransaction > input{
+  background-color: white;
+  width: -webkit-fill-available;
+  padding: 10px;
+  margin: 4px;
+  border: darkmagenta;
+  border-radius: 6px 1px 6px 6px;
+  box-shadow: 1px 2px 2px 1px black;
+}
+.Darkaddtransaction > button{
+  background-color: white;
+  width: -webkit-fill-available;
+  padding: 10px;
+  margin: 4px;
+  border: white;;
+  border-radius: 6px 1px 6px 6px;
+  box-shadow: 1px 2px 2px 1px gray;
+}
+.DarktransactionListEdit{
+  width: 200px;
+  text-align: center;
+  display: flex;
+  background-color: black;
+  flex-direction: column;
+  font-size: 1.1rem;
+  padding: 20px;
+  border-radius: 20px 8px 20px 20px;
+  box-shadow: 1px 2px 40px 20px lightgray;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease-in-out;
+}
+.incomeBorder{
+  border-right: 4px solid springgreen;
+  border-bottom: 4px solid springgreen;
+}
+.expenseBorder{
+  border-right: 4px solid rgba(240, 77, 77, 0.835);
+  border-bottom: 4px solid rgba(240, 77, 77, 0.835);
+}
+@media only screen and (max-width: 1000px) {
+  .LightApp, .DarkApp{
+      width: 60%;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (max-width: 800px) {
+  .LightApp, .DarkApp{
+      width: 90%;
   }
 }
