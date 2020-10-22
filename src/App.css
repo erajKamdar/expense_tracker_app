@@ -80,7 +80,7 @@
   margin: 4px;
   border-radius: 6px 1px 6px 6px;
   box-shadow: 1px 2px 2px 1px lightgray;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .LighttransactionList > li > span > button{
   border-radius: 6px 1px 6px 6px;
@@ -217,7 +217,7 @@ filter: blur(3px);
   margin: 4px;
   border-radius: 6px 1px 6px 6px;
   box-shadow: 1px 2px 2px 1px black;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .DarktransactionList > li > span > button{
   background-color: pink;
